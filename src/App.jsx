@@ -7,7 +7,7 @@ import { Phone } from "lucide-react";
 function Footer() {
   return (
     <footer id="contact" className="border-t bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-10">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <h4 className="text-lg font-semibold text-stone-900">Brahmana Vantillu</h4>
@@ -23,7 +23,7 @@ function Footer() {
           </div>
           <div>
             <h5 className="text-sm font-semibold uppercase tracking-wider text-stone-700">Follow</h5>
-            <div className="mt-2 flex gap-3 text-stone-600">
+            <div className="mt-2 flex flex-wrap gap-3 text-stone-600">
               <a href="#" aria-label="Instagram" className="hover:text-stone-900">Instagram</a>
               <a href="#" aria-label="Facebook" className="hover:text-stone-900">Facebook</a>
               <a href="#" aria-label="YouTube" className="hover:text-stone-900">YouTube</a>
@@ -33,12 +33,11 @@ function Footer() {
         <p className="mt-8 text-center text-xs text-stone-500">© {new Date().getFullYear()} Brahmana Vantillu. All rights reserved.</p>
       </div>
 
-      {/* Floating WhatsApp */}
       <a
         href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER || "919999999999"}`}
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-green-600 px-4 py-3 font-semibold text-white shadow-lg transition hover:bg-green-700"
+        className="fixed bottom-4 right-4 inline-flex items-center gap-2 rounded-full bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-lg transition hover:bg-green-700 sm:bottom-6 sm:right-6 sm:px-4 sm:py-3 sm:text-base"
       >
         <Phone size={18} /> WhatsApp
       </a>
